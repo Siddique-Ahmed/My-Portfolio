@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
   </head>
-  <body>
+  <body id="body">
+    <a class="up" id="#body" href="#body"><i class="fa-solid fa-chevron-up"></i></a>
     <div class="mainContainer">
       <nav class="navbar">
         <div class="logo">
@@ -16,14 +17,14 @@
         </div>
         <ul class="list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Skill</a></li>
-          <li><a href="index.html">Services</a></li>
-          <li><a href="index.html">Review</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Review</a></li>
         </ul>
 
         <div class="btnBox">
-          <Button id="hire"><a href="">Hire Me</a></Button>
+          <Button id="hire"><a target="_blank" href="https://www.linkedin.com/in/siddique-ahmed-8a3009297/">Hire Me</a></Button>
         </div>
         <i id="bar" class="fa-solid fa-bars"></i>
       </nav>
@@ -32,10 +33,10 @@
         <div class="textArea">
           <h2>Hello, I,m Siddique Ahmed</h2>
           <h1>Frontend Developer</h1>
-          <p>Specialist in : <span>HTML</span></p>
+          <p>Specialist in : <span id="slideText">HTML</span></p>
           <div class="btnArea">
-            <button id="#">Hire Me</button>
-            <button class="about" id="#">About Me</button>
+            <button><a target="_blank" href="https://www.linkedin.com/in/siddique-ahmed-8a3009297/">Hire Me</a></button>
+            <button class="about" id="#about">About Me</button>
           </div>
         </div>
         <div class="picArea">
@@ -44,6 +45,33 @@
           </div>
         </div>
        </section>
+       <!-- ###################### About Section ################### -->
+        <section id="about">
+          <h1>About Me</h1>
+          <div class="aboutContainer">
+            <div class="aboutPic">
+              <div class="picBox">
+                <img src="./img/my pic 3.jpg">
+              </div>
+            </div>
+            <div class="aboutText">
+              <h4>Web Developer and Web Designer for all Devices, Responsive Web pages and Application</h4>
+              <p>Passionate Web Developer ,Web Designer and make responisive websites for any devices. expertize in HTML CSS and JAVASCRIPT.</p>
+              <a target="_blank" href="https://github.com/Siddique-Ahmed">Check My Projects</a>
+            </div>
+          </div>
+        </section>
+        <!-- ################### skills section ################### -->
+         <section id="skill">
+          <h1>Skill</h1>
+          <div class="skillBox">
+            <div class="skill1">
+              <i class="fa-solid fa-desktop"></i>
+              <h4>Frontend Developer</h4>
+              <p>Html,Css,Javascript and Bootstrap</p>
+            </div>
+          </div>
+         </section>
     </div>
 
 
