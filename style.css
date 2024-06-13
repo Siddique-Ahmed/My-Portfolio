@@ -358,6 +358,69 @@ body a.up i {
   font-size: 17px;
   font-weight: 500px;
 }
+/* ################### projects Section styling ######################## */
+.mainContainer #projects  {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+}
+#projects h1{
+  font-size: 30px;
+  color: #fff;
+}
+#projects .projectBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+#projects .projectBox .project{
+  flex-basis: 30%;
+  height: 310px;
+  border: 1px dashed #fee715;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.projectBox .project h2{
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.projectBox .project p{
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.projectBox .project a{
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fee715;
+  border: 1px solid #fee715;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+.projectBox .project a:hover{
+  background-color: #fee715;
+  color: #000;
+}
 /* ################################ media Query #################################### */
 @media (max-width: 920px) {
   .mainContainer .navbar {
@@ -477,4 +540,27 @@ body a.up i {
     font-size: 15px;
   }
 
+}
+
+/* ########### media query for projects #################### */
+@media (max-width:855px){
+  .mainContainer #projects{
+    padding: 20px 30px;
+  }
+  #projects .projectBox{
+    justify-content: space-evenly;
+  }
+  #projects .projectBox .project{
+    flex-basis: 45%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-Width: 545px){
+  .mainContainer #projects {
+    padding: 20px;
+  }
+  #projects .projectBox .project{
+    flex-basis:100%;
+  }
 }
